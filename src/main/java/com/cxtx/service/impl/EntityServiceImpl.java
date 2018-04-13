@@ -23,7 +23,7 @@ public class EntityServiceImpl implements EntityService {
     @Override
     public Entities findByName(String name) {
         if (name == null){
-            System.out.println("0");
+            System.out.println("3");
             return  null;
             //System.out.println("0");
         }
@@ -33,6 +33,8 @@ public class EntityServiceImpl implements EntityService {
             //if(temp.size()!=0)
                 //return temp.get(0);
             System.out.println("1");
+
+            System.out.println(entityDao.findByName(name));
             return entityDao.findByName(name);
 
         }

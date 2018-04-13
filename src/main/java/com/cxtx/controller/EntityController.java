@@ -7,6 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import org.json.JSONObject;
+//import org.json.JSONArray;
+
+
 import java.util.List;
 
 /**
@@ -26,9 +30,13 @@ public class EntityController extends ApiController{
     @RequestMapping(value = "/chaxun", method = RequestMethod.POST)
     @ResponseBody
     public ServiceResult chaxun(@RequestBody String name) throws Exception{
-        System.out.println("2");
-        checkParameter(name!=null,"name cannot be empty!");
-        Entities entityGet = entityService.findByName(name);
-        return ServiceResult.success(entityGet);
+        System.out.println("0");
+        System.out.println(name);
+        //JSONObject name1 = JSONObject.fromObject(name);
+        //System.out.println(name1);
+        //checkParameter(name1!=null,"name cannot be empty!");
+        //Entities entityGet = entityService.findByName(name1);
+        //return ServiceResult.success(entityGet);
+        return null;
     }
 }
