@@ -1,4 +1,4 @@
-package Tools;
+package com.cxtx.Tools;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
@@ -11,7 +11,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.File;
 import java.io.IOException;
 
-import Model.TestCase;
+import com.cxtx.model.TestCase;
 
 import java.util.*;
 

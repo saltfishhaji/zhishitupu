@@ -1,6 +1,9 @@
 package com.cxtx.controller;
 
 import com.cxtx.exception.ParameterInvalidException;
+import com.cxtx.service.impl.StorageFileNotFoundException;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -14,5 +17,9 @@ public abstract class ApiController {
         if (!condition) {
             throw new ParameterInvalidException(errorMessage);
         }
+    }
+    @ExceptionHandler(StorageFileNotFoundException.class)
+    public ResponseEntity<?> handleStorageFileNotFound(StorageFileNotFoundException exc) {
+        return ResponseEntity.notFound().build();
     }
 }
