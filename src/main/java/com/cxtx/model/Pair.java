@@ -1,4 +1,4 @@
-package Model;
+package com.cxtx.model;
 
 public class Pair {
     public String key;

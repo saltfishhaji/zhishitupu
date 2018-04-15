@@ -36,3 +36,5 @@ target/
 .DS_Store
 
 src/test
+upload-dir
+out

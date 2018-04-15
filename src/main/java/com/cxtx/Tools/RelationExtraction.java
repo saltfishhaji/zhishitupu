@@ -1,11 +1,10 @@
-package Tools;
+package com.cxtx.Tools;
 
-import Model.Pair;
-import Model.TestCase;
+import com.cxtx.model.Pair;
+import com.cxtx.model.TestCase;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.TreeSet;
 
 public class RelationExtraction {
     // "[.,!?\\s]+"
